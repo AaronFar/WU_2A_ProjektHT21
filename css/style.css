@@ -2,20 +2,22 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    background-color: rgb(247, 231, 191);
 }
 
 #wrapper_home {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 3fr 3fr 2fr;
+    grid-template-columns: 1.075fr 1fr;
+    grid-template-rows: 1fr 0.4fr 3fr 3fr 1fr;
     background-color: rgb(247, 231, 191);
 
     grid-template-areas: 
-    "log log log"
-    "nav nav nav"
-    "off off off"
-    "inf inf inf"
-    "foo foo foo"
+    "log log"
+    "nav nav"
+    "off off"
+    "inf img"
+    "foo foo"
     ;
 
     height: 100vh;
@@ -28,11 +30,12 @@ header {
     grid-area: log;
     display: flex;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 8px;
 }
 
 #logo {
     width: 400px;
+    background-color: rgb(110, 100, 73);
 }
 
 nav {
@@ -42,7 +45,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: rgb(110, 100, 73);
     
 }
@@ -81,17 +84,72 @@ nav {
     color: rgb(68, 49, 32);
 }
 
-#offer_1, #offer_2 {
-    grid-area: off;
-
+h1 {
+    background-color: rgb(110, 100, 73);
 }
 
-#article_open_times, #article_adress {
+#offers {
+    grid-area: off;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: rgb(68, 49, 32);
+    margin: 20px;
+    align-items: flex-start;
+    font-family: 'Source Serif Pro', serif;
+    flex-wrap: wrap;
+}
+
+.offer_title {
+    padding: 16px;
+    line-height: 150%;
+}
+
+.offer_text {
+    font-size: 1rem;
+    line-height: 100%;
+    color: rgb(116, 93, 74);
+    width: 550px
+}
+
+
+#information {
     grid-area: inf;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(68, 49, 32);
+    margin-left: 40px;
+}
+
+#restaurant_photo {
+    grid-area: img;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.information_title {
+    padding: 16px;
+}
+
+.information_text {
+    font-size: 1rem;
+    color: rgb(116, 93, 74);
 
 }
 
 footer {
     grid-area: foo;
+    background-color: rgb(110, 100, 73);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 20px;
+}
+
+.footer_text {
+    margin-right: 100px;
+    background-color: rgb(110, 100, 73);
 
 }
