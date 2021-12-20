@@ -58,19 +58,17 @@ nav {
 
 #unfocused_anchor_1:hover, #unfocused_anchor_1:active {
     color: rgb(68, 49, 32);
-
 }
 
 #focused_anchor:link, #focused_anchor:visited {
     color: rgb(255, 252, 228);
     text-decoration: none;
     font-weight: bold;
-
+    text-decoration: underline;
 }
 
 #focused_anchor:hover, #focused_anchor:active{
     color: rgb(68, 49, 32);
-
 }
 
 #unfocused_anchor_2:link, #unfocused_anchor_2:visited {
@@ -151,5 +149,179 @@ footer {
 .footer_text {
     margin-right: 100px;
     background-color: rgb(110, 100, 73);
+}
 
+.footer_text2, .footer_text2:hover {
+    margin-right: 100px;
+    background-color: rgb(110, 100, 73);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#wrapper_om_oss {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr 3fr 2fr 2fr 1fr;
+    
+    grid-template-areas: 
+    "log log"
+    "nav nav"
+    "his im1"
+    "who goa"
+    "foo foo"
+    ;
+
+    height: 100vh;
+    width: 100vw;
+    gap: 0.1rem;
+}
+
+#history {
+    grid-area: his;
+    font-family: 'Source Serif Pro', Serif;
+    color: rgb(68, 49, 32);
+    margin: 40px;
+    
+}
+
+.titles {
+    padding-bottom: 0.5rem;
+
+}
+
+.texts {
+    font-size: 1rem;
+}
+
+#about_us_photo {
+    grid-area: im1;
+    align-self: center;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+#who_we_are {
+    grid-area: who;
+    font-family: 'Source Serif Pro', Serif;
+    color: rgb(68, 49, 32);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+#goal {
+    grid-area: goa;
+    font-family: 'Source Serif Pro', Serif;
+    color: rgb(68, 49, 32);
+    margin-right: 40px;
+}
+
+#wrapper_meny {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr 5fr 1.5fr 1fr;
+
+    grid-template-areas: 
+    "log" 
+    "nav"
+    "se1"
+    "se2"
+    "foo"
+    ;
+
+    height: 100vh;
+    width: 100vw;
+    gap: 0.1rem;
+}
+
+#section_1 {
+    grid-area: se1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 2fr;
+    font-family: 'Source Serif Pro', Serif;
+    color: rgb(68, 49, 32);
+    background-color: rgb(110, 100, 73);
+
+    grid-gap: 5px 5px;
+    padding: 5px;
+    margin: 40px;
+
+    grid-template-areas: 
+    "sta spe che"
+    "dri spe che"
+    "dri ham ham"
+    ;
+}
+
+#starters {
+    grid-area: sta;
+    background-color: rgb(255, 183, 0);
+
+}
+
+#todays_special {
+    grid-area: spe;
+    background-color: rgb(255, 183, 0);
+}
+
+#cheese {
+    grid-area: che;
+    background-color: rgb(255, 183, 0);
+}
+
+#drinks {
+    grid-area: dri;
+    background-color: rgb(255, 183, 0);
+}
+
+#burgers {
+    grid-area: ham;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    
+    grid-template-areas:
+    "tit tit"
+    "lef rig"
+    ;
+}
+
+#title_hamburger {
+    grid-area: tit;
+    background-color: rgb(255, 183, 0);
+
+    padding: 5px;
+    text-decoration: underline;
+}
+
+#burger_half1 {
+    grid-area: lef;
+    background-color: rgb(255, 183, 0);
+}
+
+#burger_half2 {
+    grid-area: rig;
+    background-color: rgb(255, 183, 0);
+}
+
+.titles_menu {
+    padding: 5px;
+    text-decoration: underline;
+    background-color: rgb(255, 183, 0);
+
+}
+
+.texts_menu {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 183, 0);
+    /* background-color: rgb(247, 231, 191); */
+
+
+}
+
+#section_2 {
+    grid-area: se2;
 }
