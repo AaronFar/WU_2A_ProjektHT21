@@ -98,13 +98,17 @@ h1 {
     flex-wrap: wrap;
 }
 
-.offer_title {
+.offer_box {
     padding: 16px;
+}
+
+.offer_title {
     line-height: 150%;
 }
 
 .offer_text {
     font-size: 1rem;
+    font-weight: bold;
     line-height: 100%;
     color: rgb(116, 93, 74);
     width: 550px
@@ -127,12 +131,13 @@ h1 {
     margin-bottom: 20px;
 }
 
-.information_title {
+.information_box {
     padding: 16px;
 }
 
 .information_text {
     font-size: 1rem;
+    font-weight: bold;
     color: rgb(116, 93, 74);
 
 }
@@ -162,6 +167,8 @@ footer {
     display: grid;
     grid-template-columns: minmax(500px,1fr) minmax(500px,1fr);
     grid-template-rows: 1fr 0.4fr 3fr 2fr 2fr 1fr;
+    font-weight: bold;
+
     
     grid-template-areas: 
     "log log"
@@ -191,6 +198,8 @@ footer {
 
 .texts {
     font-size: 1rem;
+    color: rgb(116, 93, 74);
+
 }
 
 #about_us_photo {
@@ -337,7 +346,9 @@ footer {
 #about_our_food {
     grid-area: tex;
     font-family: 'Source Serif Pro', Serif;
-    color: rgb(68, 49, 32);
+    color: rgb(116, 93, 74);
+    font-weight: bold;
+
     margin-left: 80px;
     margin-bottom: 40px;
     margin-right: 20px;
@@ -345,6 +356,8 @@ footer {
 
 #about_our_food_title {
     padding-bottom: 0.5rem;
+    color: rgb(68, 49, 32);
+
 }
 
 #photo_2 {
